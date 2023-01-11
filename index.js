@@ -6,6 +6,8 @@ const port = 3000
 // Apps
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 // Static files
 app.use(express.static('public'))
