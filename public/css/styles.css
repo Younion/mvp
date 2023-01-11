@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 .color-section {
   background-color: #ff4c68;
   color: #fff;
-  padding: 0 2 0 2;
+  padding: 2;
 }
 
 .white-section {
@@ -122,10 +122,6 @@ p {
   margin-bottom: 1.5rem;
 }
 
-.cardgrid {
-
-}
-
 .card {
   text-align: left;
   padding: 5px;
@@ -145,7 +141,7 @@ p {
 }
 
 .emoji {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .inner-card-container {
@@ -166,7 +162,6 @@ p {
     padding-left: 0;
   }
 
-
 .card:hover {
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
@@ -175,4 +170,23 @@ hr {
   border: 0;
   color: #ff4c68;
   opacity: 1;
+}
+
+.pagination {
+  border: 1px solid;
+  width: 50%;
+  height: 50px;
+  margin: 10px auto 0;
+}
+
+.review-form {
+  border: 1px solid;
+  width: 80%;
+  height: 50rem;
+  margin: 0 auto;
+}
+
+.review-form-container {
+  width: 100%;
+  padding-bottom: 2rem;
 }
