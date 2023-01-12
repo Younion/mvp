@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   p {
@@ -130,7 +130,7 @@ p {
 
 .card-manufacturer {
   width: 100%;
-  border: 1px solid;
+  /* border: 1px solid; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -141,11 +141,12 @@ p {
 }
 
 .emoji {
-  font-size: 2rem;
+  width: 90%;
+  height: auto;
 }
 
 .inner-card-container {
-  border: 1px solid;
+  /* border: 1px solid; */
   width: 100%;
   height: 100%;
   line-height: 50px;
@@ -190,3 +191,19 @@ hr {
   width: 100%;
   padding-bottom: 2rem;
 }
+
+.search-reviews {
+  border: 1px solid;
+  width: 50%;
+  height: 50px;
+  margin: 10px auto 0;
+}
+
+.footer-fun {
+  text-align: left;
+}
+
+.footer-copywrite {
+  text-align: right;
+}
+

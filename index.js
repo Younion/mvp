@@ -15,8 +15,15 @@ app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/img', express.static(__dirname + 'public/img'))
 app.use('/js', express.static(__dirname + 'public/js'))
 
+// Routes
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));})
+
+app.get('/sauces', (req, res) => {
+  res.sendFile(path.join(__dirname, '/sauces.html'));})
+
+app.get('/manufacturers', (req, res) => {
+  res.sendFile(path.join(__dirname, '/manufacturers.html'));})
 
 // listen on port 3000
 app.listen(port, function() {
