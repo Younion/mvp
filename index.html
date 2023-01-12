@@ -32,7 +32,7 @@
 
     <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="">JYH Hot Sauce Index</a>
+            <a class="navbar-brand" href="/">JYH Hot Sauce Index</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -42,11 +42,11 @@
             <ul class="navbar-nav ms-auto">
                 
                     <li class="nav-item">
-<!-- Search Bar -----> <input type="text" id="search" name="search"><br>
+<!-- Search Bar -----> <input type="search" id="search" name="search" value="Search..."><br>
                     </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="">Taste a Sauce</a>
+                <a class="nav-link" href="#review">Taste a Sauce</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="">About This Project</a>
@@ -93,8 +93,10 @@
                                         <div class="row no-gutters">
                                             <div class="col-3">
                                                 <div class="row no-gutters">
-                                                    <div class="col-6">                                                           
-                                                        <img src="/images/sparkles_2728.png" class="emoji" alt="star-rating">
+                                                    <div class="col-6">
+                                                        <div class="emoji">
+                                                            ✨
+                                                        </div>
                                                     </div>
                                                     <div class="col-6 rating">    
 
@@ -106,8 +108,9 @@
                                             <div class="col-3">
                                                 <div class="row no-gutters">
                                                     <div class="col-6">
-                                                        <img src="/images/hot-pepper_1f336-fe0f.png" class="emoji" alt="star-rating">
-                                                    </div>
+                                                        <div class="emoji">
+                                                            🌶️
+                                                        </div>                                                    </div>
                                                     <div class="col-6 rating"> 
 
 <!-- Spiciness    ---------------------------------------> 10/10
@@ -118,8 +121,9 @@
                                             <div class="col-3">
                                                 <div class="row no-gutters">
                                                     <div class="col-6">
-                                                        <img src="/images/eye_1f441-fe0f.png" class="emoji" alt="presentation">
-                                                     </div>
+                                                        <div class="emoji">
+                                                            👁️
+                                                        </div>                                                     </div>
                                                     <div class="col-6 rating">   
                                                         
 <!-- Presentation    -------------------------------------> 5/5
@@ -130,8 +134,9 @@
                                             <div class="col-3">
                                                 <div class="row no-gutters">
                                                     <div class="col-6">
-                                                        <img src="/images/red-heart_2764-fe0f.png" class="emoji" alt="loved">
-                                                    </div>
+                                                        <div class="emoji">
+                                                            ❤️
+                                                        </div>                                                    </div>
                                                     <div class="col-6 rating">
                                                         
 <!-- Loved    -------------------------------------------> 75%
@@ -169,8 +174,9 @@
                                             <div class="col-3">
                                                 <div class="row no-gutters">
                                                     <div class="col-6">                                                           
-                                                        <img src="/images/sparkles_2728.png" class="emoji" alt="star-rating">
-                                                    </div>
+                                                        <div class="emoji">
+                                                            ✨
+                                                        </div>                                                    </div>
                                                     <div class="col-6 rating">    
 
 <!-- Overall    ------------------------------------------> 5/5
@@ -181,8 +187,9 @@
                                             <div class="col-3">
                                                 <div class="row no-gutters">
                                                     <div class="col-6">
-                                                        <img src="/images/hot-pepper_1f336-fe0f.png" class="emoji" alt="star-rating">
-                                                    </div>
+                                                        <div class="emoji">
+                                                            🌶️
+                                                        </div>                                                    </div>
                                                     <div class="col-6 rating"> 
 
 <!-- Spiciness    ---------------------------------------> 10/10
@@ -193,8 +200,9 @@
                                             <div class="col-3">
                                                 <div class="row no-gutters">
                                                     <div class="col-6">
-                                                        <img src="/images/eye_1f441-fe0f.png" class="emoji" alt="presentation">
-                                                    </div>
+                                                        <div class="emoji">
+                                                            👁️
+                                                        </div>                                                    </div>
                                                     <div class="col-6 rating">   
                                     
 <!-- Presentation    -------------------------------------> 5/5
@@ -205,8 +213,9 @@
                                             <div class="col-3">
                                                 <div class="row no-gutters">
                                                     <div class="col-6">
-                                                        <img src="/images/red-heart_2764-fe0f.png" class="emoji" alt="loved">
-                                                    </div>
+                                                        <div class="emoji">
+                                                            ❤️
+                                                        </div>                                                    </div>
                                                     <div class="col-6 rating">
                                     
 <!-- Loved    -------------------------------------------> 75%
@@ -245,7 +254,10 @@
     
   </section>
 
+  <button type="button" onclick="window.location.href = '#review'" class="btn btn-light review-button">Taste a Sauce</button>
+
   <!-- Footer -->
+  <!--#include virtual="footer.html" --> 
   <footer class="white-section" id="footer">
     <div class="container-fluid">
         <div class="row">
