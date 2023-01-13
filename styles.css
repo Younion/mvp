@@ -295,7 +295,7 @@ hr {
   }
 
   h1 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   p {
@@ -309,6 +309,9 @@ hr {
   .sauce-emoji {
     font-size: 150%;
   }
+  
+  .navbar-brand {
+    font-size: 1rem;
 }
 
 @media (min-width: 1444px) {
