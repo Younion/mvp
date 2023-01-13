@@ -311,8 +311,10 @@ hr {
   }
   
   .navbar-brand {
+    font-family: "Ubuntu";
     font-size: 1rem;
-}
+    font-weight: bold;
+  }
 
 @media (min-width: 1444px) {
   .title-image {
