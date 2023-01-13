@@ -110,6 +110,10 @@ p {
   font-size: 300%;  
 }
 
+.sauce-emoji {
+  font-size: 200%;
+}
+
 .inner-card-container {
   /* border: 1px solid; */
   width: 100%;
@@ -198,7 +202,6 @@ hr {
 
 .sauce-manufacturer {
   border: 1px solid black;
-  width: 20%;
 }
 
 .sauce-ratings {
@@ -242,6 +245,28 @@ hr {
   border: 1px solid black;
 }
 
+.rating-container {
+  /* border: 1px solid orange; */
+  width: 150px;
+  position: relative;
+}
+
+.sub-rating {
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  text-align: left;
+  color: grey;
+}
+
+.main-rating {
+  /* border: 1px solid black; */
+  width: 20%;
+  text-align: center;
+
+}
+
 
 /* Media Queries */
 @media (max-width: 1081px) {
@@ -272,7 +297,11 @@ hr {
   }
 
   .emoji {
-    font-size: 200%;  
+    font-size: 200%; 
+  }
+  
+  .sauce-emoji {
+    font-size: 150%;
   }
 }
 
