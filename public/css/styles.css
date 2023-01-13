@@ -272,6 +272,11 @@ hr {
 
 /* Media Queries */
 @media (max-width: 1081px) {
+  html, body {
+    width:100%;
+    overflow-x:hidden;
+   }
+  
   .color-section {
     text-align: center;
   }
