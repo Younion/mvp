@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JYH Hot Sauce Index</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/e62a9b2505.js" crossorigin="anonymous"></script>
+
+  <!-- Axios -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+    <section class="color-section" id="title">
+
+        <div class="container-fluid">
+
+    <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="/">JYH Hot Sauce Index</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+            <ul class="navbar-nav ms-auto">
+                
+                    <li class="nav-item">
+<!-- Search Bar -----> <input type="search" id="search" name="search" value="Search..."><br>
+                    </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="#review">Taste a Sauce</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="">About This Project</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="">Login</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+        <p id="GFG_UP" style="font-size: 15px; font-weight: bold;"></p>
+        
+    </section>
+    <section class="white-section" id="sauce-page">
+
+        <div class="sauce-container" id="sauce-container">
+            <div class="row">
+                <div class="big-sauce-card" id="big-sauce-card">
+                    <h2>Sauce Names are sometimes very long</h2>
+                    <div class="sauce-manufacturer" id="sauce-manufacturer">
+                        McIlhenny Sauce Co.
+                    </div>
+                    <div class="row sauce-row no-gutters">
+                        <div class="col-4">
+                            <div class="sauce-ratings" id="sauce-ratings">
+                                <div class="row no-gutters">
+                                    <div class="col">✨ 5/5</div>
+                                    <div class="col">🌶️ 10/10</div>
+                                    <div class="w-100"></div>
+                                    <div class="col">👁️ 5/5</div>
+                                    <div class="col">❤️ 75%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="sauce-flavor-notes" id="sauce-flavor-notes">
+                                Garlicky - 30%
+                                Linger - 60%
+                                Constituent Peppers - 10%
+                            </div>
+                        </div>  
+                        <div class="col-4">
+                            <div class="sauce-thickness" id="sauce-thickness">
+                                Average, with chunks
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sauce-tastings" id="sauce-tastings">
+                        99 Tastings
+                    </div>
+                </div>
+                <div class="sauce-tasting-section" id="sauce-tasting-section">
+                    <div class="sauce-tasting-card" id="sauce-tasting-card">
+                        <div class="row">
+                            <div class="sauce-tasting-ratings" id="sauce-tasting-ratings">
+                                <div class="row no-gutters">
+                                    <div class="col">✨ 5/5</div>
+                                    <div class="col">🌶️ 10/10</div>
+                                    <div class="col">👁️ 5/5</div>
+                                    <div class="col">❤️ 75%</div>
+                                </div>
+                            </div>
+                            <div class="sauce-tasting-notes" id="sauce-tasting-notes">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="pagination">
+                Pagination
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="white-section" id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8 footer-fun">
+                    <p>All information on this page is delicious, unless otherwise stated.</p>
+                </div>
+                    <!-- <i class="fa-brands fa-twitter social-icon"></i>
+                    <i class="fa-brands fa-facebook-f social-icon"></i>
+                    <i class="fa-brands fa-instagram social-icon"></i>
+                    <i class="fa-solid fa-envelope social-icon"></i> -->
+                <div class="col-4 footer-copywrite">
+                    <p>© Copyright 2022 JYH Hot Sauce Index</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
