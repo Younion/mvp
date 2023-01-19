@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat";
   text-align: center;
+  margin:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -224,13 +225,8 @@ hr {
   width: 100%;
   height: 50%;
   text-align: left;
-  position: relative;
-}
-
-.big-reviews-section {
-  border: 3px solid black;
-  margin: 0;
-  margin-top: 20px;
+  position: relative;    
+  margin-bottom: 30px;
 }
 
 .left-sauce-card {
@@ -314,6 +310,7 @@ hr {
 }
 
 .sauce-tasting-card {
+  position: relative;
   border: 1px solid black;
   border-radius: 10px;
   margin: 10px;
@@ -331,6 +328,12 @@ hr {
 .sauce-tasting-notes {
   text-align: center;
   border-top: 1px solid black;
+}
+
+.sauce-tasting-owner {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
 }
 
 .rating-container {
@@ -355,7 +358,7 @@ hr {
 }
 
 /* Media Queries */
-@media (max-width: 1081px) {
+@media (max-width: 1300px) {
   html, body {
     width:100%;
     overflow-x: hidden;
@@ -410,7 +413,7 @@ hr {
 
   .sauce-tasting-notes {
     border-top: 1px solid black;
-    padding: .5rem;
+    padding: 1rem;
   }
 
   .inner-sauce-ratings {

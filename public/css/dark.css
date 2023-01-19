@@ -1,0 +1,502 @@
+body {
+    font-family: "Montserrat";
+    text-align: center;
+        margin:0;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  /* Containers */
+  
+  /* Sections */
+  .color-section {
+    background-color: #28282B;
+    color: #F9F6EE;
+    padding: 2rem;
+    border-top: 1px solid #F9F6EE;
+  }
+  
+  .white-section {
+    background-color: #28282B;
+    border-top: 2px solid #F9F6EE;
+    color: #F9F6EE;
+    padding: 2rem;
+  }
+  
+  /* Headings */
+  .big-heading {
+    color: #F9F6EE;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-family: "Montserrat";
+    font-weight: 900;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: #F9F6EE;
+  }
+  
+  /* Navigation Bar */
+  
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+    font-weight: 300;
+  }
+  
+  .nav-link:hover {
+    font-weight: 400;
+  }
+  
+  /* Download Buttons */
+  .review-button {
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    bottom: 10px;
+    right: 5px;
+    padding: 0;
+    border: 3px solid #36454F;
+    background-color: #F9F6EE;
+  }
+  
+  /* Title Image */
+  .title-image {
+    z-index: 0;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 15%;
+  }
+  
+  /* Footer Section */
+  #footer {
+    border-top: 2px solid #F9F6EE;
+    font-size: 1.5rem;
+  }
+
+  .footer-fun {
+    text-align: left;
+    color: #F9F6EE;
+  }
+  
+  .footer-copywrite {
+    text-align: right;
+    color: #F9F6EE;
+  }
+
+  .social-icon {
+    margin: 20px 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card {
+    text-align: left;
+    padding: 5px;
+    margin: .5rem;
+    background-color: #1E1F21;
+  }
+  
+  .card-manufacturer {
+    width: 100%;
+    /* border: 1px solid; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .manufacturer-name {
+    font-size: .75rem;
+    color: #F9F6EE;
+  }
+  
+  .sauce-name {
+    font-size: 1.5rem;
+    color: #F9F6EE;
+  }
+  
+  .rating {
+    font-size: 1rem;
+    color: #F9F6EE;
+  }
+  
+  .emoji {
+    font-size: 300%;  
+    color: #F9F6EE; 
+  }
+  
+  .sauce-emoji {
+    font-size: 200%;
+  }
+  
+  .inner-card-container {
+    /* border: 1px solid; */
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+  }
+  
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+  }
+  .col,
+    [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+  .card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  
+  hr {
+    border: 0;
+    color: #ff4c68;
+    opacity: 1;
+  }
+  
+  .pagination-container {
+    /* border: 1px solid; */
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    padding-bottom: 75px;
+    background-color: #28282B ;
+  }
+  
+  .btn-primary {
+    background-color: #F9F6EE;
+    color: black;
+  }
+
+  .btn-secondary {
+    color: #F9F6EE;
+  }
+
+  .review-form {
+    /* border: 1px solid; */
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .review-form-container {
+    width: 100%;
+  }
+  
+  .review-form-inner-container {
+    padding: 2rem 0;
+  }
+  
+  .review-form-innermost-container {
+    padding: 1rem 0;
+  }
+  
+  .form-search {
+    position: relative;
+    width: 50%;
+  }
+  
+  .search-reviews {
+    border: 1px solid;
+    width: 50%;
+    height: 50px;
+    margin: 10px auto 0;
+  }
+  
+  .footer-fun {
+    text-align: left;
+  }
+  
+  .footer-copywrite {
+    text-align: right;
+  }
+  
+  #search {
+    background-color: grey;
+    border-color: grey;
+    margin-top: 4px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  
+  .sauce-container {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+  }
+  
+  .big-sauce-card {
+    /* border: 1px solid #F9F6EE; */
+    border-bottom: 1px solid #F9F6EE;
+    /* border-radius: 10px; */
+    width: 100%;
+    height: 50%;
+    text-align: left;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .left-sauce-card {
+    position: relative;
+    border-right: 1px solid #F9F6EE;
+    padding: 5px;
+  }
+  
+  .sauce-row {
+    height: 70%;
+  }
+  
+  .sauce-manufacturer {
+    /* border: 1px solid black; */
+  }
+  
+  .sauce-ratings {
+    position: relative;
+    margin-right: 70px;
+    padding: 0;
+  }
+  
+  .sauce-emoji {
+    font-size: 400%;
+    width: 80px;
+    margin-left: 10px;
+    /* border: 1px solid white; */
+  }
+  
+  .inner-sauce-ratings {
+    position: relative;
+    width: 140px;
+    height: 100px;
+    /* border: 1px solid orange; */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .sauce-main-rating {
+    position: absolute;
+    font-size: 2rem;
+    top: 10px;
+    width: 40px;
+    left: 85px;
+    /* border: 1px solid white; */
+  }
+  
+  .sauce-sub-rating {
+    position: relative;
+    font-size: 1rem;
+    width: 85px;
+    left: 110px;
+    bottom: 50px;
+    /* border: 1px solid white; */
+    color: #808080;
+  }
+  
+  .sauce-heat-sources {
+   /* border-right: 1px solid black; */
+   padding: 10px;
+  }
+  
+  .sauce-flavor-notes {
+    padding: 10px;
+  }
+  
+  .sauce-thickness {
+    /* border-left: 1px solid black; */
+    padding: 10px;
+  }
+  
+  .sauce-tastings {
+    /* border: 1px solid black; */
+    width: 20%;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    margin-right: 5px;
+  }
+  
+  .sauce-tasting-card {
+    position: relative;
+    border: 1px solid #F9F6EE;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: left;
+  }
+  
+  .sauce-tasting-card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  
+  .sauce-tasting-ratings {
+    /* border-bottom: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sauce-tasting-notes {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .sauce-tasting-owner {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+  
+  .rating-container {
+    /* border: 1px solid orange; */
+    width: 150px;
+    position: relative;
+  }
+  
+  .sub-rating {
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 17px;
+    top: 10px;
+    text-align: left;
+    color: lightgrey;
+  }
+  
+  .main-rating {
+    /* border: 1px solid black; */
+    width: 20%;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1300px) {
+    html, body {
+      width:100%;
+      overflow-x: hidden;
+    }
+    
+    .color-section {
+      text-align: center;
+    }
+  
+    .title-image {
+      position: static;
+      transform: rotate(0);
+      margin-top: 2rem;
+    }
+  
+    .col {
+      margin-top: 2rem;
+    }
+  
+    .big-heading {
+      font-size: 4rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .emoji {
+      font-size: 150%; 
+    }
+  
+    .left-sauce-card {
+      position: relative;
+      /* border-bottom: 1px solid black; */
+      border-right: 0;
+      padding: 5px;
+    }
+  
+    .sauce-tasting-ratings { 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: 40px;  
+      border-bottom: 0; 
+    }
+  
+    .inner-sauce-ratings {
+      width: 150px;
+      height: 75px;
+    }
+    
+    .sauce-emoji {
+      font-size: 300%;
+      width: 90px;
+      /* border: 1px solid black; */
+    }
+  
+    .sauce-main-rating {
+      position: absolute;
+      left: 60px;
+      font-size: 2rem;
+    }
+  
+    .sauce-sub-rating {
+      position: absolute;
+      top: 10px;
+      left: 70px;
+      font-size: 1.20em;
+      margin-left: 10px;
+      margin-top: 30px;
+    }
+    
+    .navbar-brand {
+      font-family: "Ubuntu";
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  
+    .review-form {
+      /* border: 1px solid; */
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 1444px) {
+    .title-image {
+      right: 25%;
+      width: 350px;
+    }
+  
+    .review-button {
+      display: none;
+    }
+  }
+  
