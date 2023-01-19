@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+h3 {
+  text-align: center;
+}
+
 /* Containers */
 
 /* Sections */
@@ -38,6 +42,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Navigation Bar */
+
+
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2rem;
@@ -48,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   font-family: "Montserrat";
   font-weight: 300;
+}
+
+.nav-link:hover {
+  font-weight: 400;
 }
 
 /* Download Buttons */
@@ -102,6 +112,14 @@ p {
   align-items: center;
 }
 
+.manufacturer-name {
+  font-size: .75rem;
+}
+
+.sauce-name {
+  font-size: 1.5rem;
+}
+
 .rating {
   font-size: 1rem;
 }
@@ -142,23 +160,36 @@ hr {
   opacity: 1;
 }
 
-.pagination {
-  border: 1px solid;
-  width: 50%;
+.pagination-container {
+  /* border: 1px solid; */
+  padding-top: 30px;
+  width: 100%;
   height: 50px;
-  margin: 10px auto 0;
+  margin: 0 auto;
 }
 
 .review-form {
-  border: 1px solid;
-  width: 80%;
-  height: 50rem;
+  /* border: 1px solid; */
+  width: 50%;
   margin: 0 auto;
+  text-align: left;
 }
 
 .review-form-container {
   width: 100%;
-  padding-bottom: 2rem;
+}
+
+.review-form-inner-container {
+  padding: 2rem 0;
+}
+
+.review-form-innermost-container {
+  padding: 1rem 0;
+}
+
+.form-search {
+  position: relative;
+  width: 50%;
 }
 
 .search-reviews {
@@ -183,17 +214,30 @@ hr {
 }
 
 .sauce-container {
-  border: 3px solid yellow;
+  border: 1px solid black;
   width: 100%;
   height: auto;
 }
 
 .big-sauce-card {
-  border: 5px solid cyan;
+  border: 1px solid black;
+  border-radius: 10px;
   width: 100%;
   height: 50%;
   text-align: left;
   position: relative;
+}
+
+.big-reviews-section {
+  border: 3px solid black;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.left-sauce-card {
+  position: relative;
+  border-right: 1px solid black;
+  padding: 5px;
 }
 
 .sauce-row {
@@ -201,48 +245,93 @@ hr {
 }
 
 .sauce-manufacturer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .sauce-ratings {
-  border: 1px solid black;
-  height: 100%;
-  padding: 30px;
+  padding-top: 20px;
+}
+
+.sauce-emoji {
+  font-size: 400%;
+  width: 80px;
+  /* border: 1px solid black; */
+}
+
+.inner-sauce-ratings {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  /* border: 1px solid orange; */
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.sauce-main-rating {
+  font-size: 2rem;
+  width: 40px;
+  /* border: 1px solid black; */
+}
+
+.sauce-sub-rating {
+  position: relative;
+  font-size: 1.5rem;
+  width: 85px;
+  left: 100px;
+  bottom: 65px;
+  /* border: 1px solid black; */
+  color: lightgrey;
+}
+
+.sauce-heat-sources {
+ border-right: 1px solid black;
+ height: 275px;
+ padding: 8px;
 }
 
 .sauce-flavor-notes {
-  border: 1px solid black;
-  height: 100%;
+  height: 275px;
+  padding: 8px;
 }
 
 .sauce-thickness {
-  border: 1px solid black;
-  height: 100%;
+  border-left: 1px solid black;
+  height: 275px;
+  padding: 8px;
 }
 
 .sauce-tastings {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 20%;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  right: 0;
+  text-align: right;
+  margin-right: 5px;
 }
 
 .sauce-tasting-section {
-  border: 5px solid red;
+  border: 1px solid black;
   margin-top: 10px;
 }
 
 .sauce-tasting-card {
-  border: 3px solid orange;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: left;
+}
+
+.sauce-tasting-card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
 .sauce-tasting-ratings {
-  border: 4px solid green;
+  /* border-bottom: 1px solid black; */
 }
 
 .sauce-tasting-notes {
-  border: 1px solid black;
+  text-align: center;
+  border-top: 1px solid black;
 }
 
 .rating-container {
@@ -254,10 +343,10 @@ hr {
 .sub-rating {
   /* border: 1px solid red; */
   position: absolute;
-  left: 13px;
+  left: 17px;
   top: 10px;
   text-align: left;
-  color: grey;
+  color: lightgrey;
 }
 
 .main-rating {
@@ -267,7 +356,7 @@ hr {
 }
 
 /* Media Queries */
-@media (max-width: 1081px) {
+@media (max-width: 1300px) {
   html, body {
     width:100%;
     overflow-x: hidden;
@@ -295,22 +384,67 @@ hr {
     font-size: 2rem;
   }
 
+  h3 {
+    font-size: 1rem;
+  }
+
   p {
-    font-size: .75rem;
+    font-size: 1rem;
   }
 
   .emoji {
     font-size: 150%; 
   }
+
+  .left-sauce-card {
+    position: relative;
+    border-bottom: 1px solid black;
+    border-right: 0;
+    padding: 5px;
+  }
+
+  .sauce-tasting-ratings { 
+    margin-left: 30px;
+    margin-top: 20px;  
+    border-bottom: 0; 
+  }
+
+  .sauce-tasting-notes {
+    border-top: 1px solid black;
+    padding: .5rem;
+  }
+
+  .inner-sauce-ratings {
+    width: 150px;
+  }
   
   .sauce-emoji {
-    font-size: 150%;
+    font-size: 300%;
+    width: 90px;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+  }
+
+  .sauce-main-rating {
+    text-align: right;
+    font-size: 2rem;
+  }
+
+  .sauce-sub-rating {
+    position: absolute;
+    top: 30px;
+    right: 0;
   }
   
   .navbar-brand {
     font-family: "Ubuntu";
     font-size: 1rem;
     font-weight: bold;
+  }
+
+  .review-form {
+    /* border: 1px solid; */
+    width: 80%;
   }
 }
 
